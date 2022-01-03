@@ -1,7 +1,6 @@
 import {
   Table,
   Button,
-  Select,
   message
 } from "antd";
 import { PlusCircleFilled } from "@ant-design/icons";
