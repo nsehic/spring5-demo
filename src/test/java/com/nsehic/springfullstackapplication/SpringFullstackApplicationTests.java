@@ -1,5 +1,6 @@
 package com.nsehic.springfullstackapplication;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -10,6 +11,7 @@ class SpringFullstackApplicationTests
     @Test
     void contextLoads()
     {
+//        Assertions.fail("Whoops! Failed test");
     }
 
 }

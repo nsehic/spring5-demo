@@ -1,7 +1,6 @@
 import {
   Table,
   Button,
-  Select,
   message
 } from "antd";
 import { PlusCircleFilled } from "@ant-design/icons";
@@ -10,8 +9,6 @@ import { getAllStudents, deleteStudentById } from "./client";
 import { useEffect, useState } from "react";
 import { ApplicationLayout } from "./components/layout";
 import { SideDrawer } from "./components/SideDrawer";
-
-const { Option } = Select;
 
 const CRUMBS = [
   {
@@ -26,7 +23,6 @@ const CRUMBS = [
 
 function App() {
   const [students, setStudents] = useState([]);
-  const [breadcrumbs, setBreadcrumbs] = useState(CRUMBS);
   const [showDrawer, setShowDrawer] = useState(false);
   const [newStudents, setNewStudents] = useState([])
   
@@ -87,7 +83,7 @@ function App() {
 
   return (
     <div>
-      <ApplicationLayout breadcrumbs={breadcrumbs}>
+      <ApplicationLayout breadcrumbs={CRUMBS}>
         <SideDrawer visible={showDrawer} hideDraw={() => setShowDrawer(false)} onSuccess={onSuccessHandler} />
         <Table
           dataSource={students}

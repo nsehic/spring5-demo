@@ -9,7 +9,7 @@ on:
 env:
   POSTGRESQL_VERSION: 13.1
   POSTGRESQL_DB: studentsdb
-  POSTGRESQL_USER: nerminsehic
+  POSTGRESQL_USER: postgres
   POSTGRESQL_PASSWORD: Mostar1997!
   JAVA_VERSION: 1.8
 
@@ -33,4 +33,4 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
       - name: Maven Clean Package
         run: |
-            ./mvnw --no-transfer-progress clean package -P build-frontend
+          ./mvnw --no-transfer-progress clean package -P build-frontend
