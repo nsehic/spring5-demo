@@ -11,7 +11,7 @@ class SpringFullstackApplicationTests
     @Test
     void contextLoads()
     {
-        Assertions.fail("Whoops! Failed test");
+//        Assertions.fail("Whoops! Failed test");
     }
 
 }
