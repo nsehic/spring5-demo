@@ -52,7 +52,7 @@ export const ApplicationLayout = ({ children, breadcrumbs = [] }) => {
               {children}
             </div>
           </Content>
-          <Footer style={{ textAlign: 'center' }}>Created by Nermin Sehic</Footer>
+          <Footer style={{ textAlign: 'center' }}>Created by Nermin Sehic. 2022</Footer>
         </Layout>
       </Layout>
     )
